@@ -11,3 +11,8 @@ for UI component:\
 for handling with null safety:\
 conditional_builder_null_safety: ^0.0.6\
   fluttertoast: ^8.2.2\
+for hexcolor:\
+  hexcolor: ^3.0.1\
+for OTP textfield:\
+  flutter_otp_text_field: ^1.1.1
+  

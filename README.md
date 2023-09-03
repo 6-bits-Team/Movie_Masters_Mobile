@@ -15,7 +15,5 @@ for hexcolor:\
 for secess or error massage:\
   fluttertoast: ^8.2.2\
 for OTP textfield:\
-  flutter_otp_text_field: ^1.1.1\
-for mobile responsive:\
-  flutter_screenutil: ^5.7.0\
+  flutter_otp_text_field: ^1.1.1
   

@@ -9,7 +9,7 @@ Widget customTextButton(context,widget,{required String text,required Color text
     child: Text(text,
       style:TextStyle(
           color: textColor,
-          fontSize: 14,
+          fontSize: 12,
     ),
     ),
   );

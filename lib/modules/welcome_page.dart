@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:moviemasters/components/custom_button.dart';
 import 'package:moviemasters/components/custom_textbutton.dart';
+import 'package:moviemasters/constants/constants.dart';
 import 'package:moviemasters/modules/auth_modules/login.dart';
 import 'package:moviemasters/modules/auth_modules/register.dart';
 import 'package:moviemasters/modules/navigation_bar_modules/movies.dart';
@@ -18,7 +19,7 @@ class WelcomePage extends StatelessWidget {
         children: [
           Stack(
             children: [
-              Container(
+              const SizedBox(
                 width: double.infinity,
                 height: double.infinity,
                 child: Image(
@@ -32,43 +33,45 @@ class WelcomePage extends StatelessWidget {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(top:140,bottom: 50),
+            padding: const EdgeInsets.only(top: 140, bottom: 50),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image(
-                    image: AssetImage("assets/images/logo.png")),
-                SizedBox(
+                const Image(image: AssetImage(kLogo)),
+                const SizedBox(
                   height: 10,
                 ),
                 Text(
                   "Movie Masters",
                   style: TextStyle(
-                      fontSize: 32,
-                      color: HexColor("#1D1E2C"),
-                      fontFamily: "Wallpoet", ),
+                    fontSize: 32,
+                    color: kPrimaryColor,
+                    fontFamily: "Wallpoet",
+                  ),
                 ),
-                SizedBox(height: 100,),
-                customButton(context, Login(),
+                const SizedBox(
+                  height: 100,
+                ),
+                customButton(context, const Login(),
                     text: "Login",
                     textColor: Colors.white,
-                    btnColor: HexColor("#1E232C"),
+                    btnColor: kPrimaryColor,
                     height: 50,
                     width: 270,
                     radius: 8),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
-                customButton(context, Register(),
+                customButton(context, const Register(),
                     text: "Register",
-                    textColor: Colors.black,
+                    textColor:kPrimaryColor,
                     btnColor: Colors.white,
                     height: 50,
                     width: 270,
                     radius: 8),
-                Spacer(),
-                customTextButton(context, Movies(), text: "Continue as a guest", textColor: HexColor( "#FFBF00")
-                )
+                const Spacer(),
+                customTextButton(context, const Movies(),
+                    text: "Continue as a guest", textColor: kYellowColor)
               ],
             ),
           ),

@@ -13,7 +13,7 @@ Widget customButton(context,widget,{required String text,required Color textColo
         navigateTo(context, widget);
       },
       child: Text(text,style:TextStyle(
-        fontSize: 15,
+        fontSize: 14,
         color: textColor
       ),
         textAlign: TextAlign.center,

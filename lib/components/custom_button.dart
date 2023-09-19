@@ -4,6 +4,7 @@ import 'package:moviemasters/constants/constants.dart';
 
 Widget customButton(context, widget,
     {required String text,
+      double fontSize=14,
     required Color textColor,
     required Color btnColor,
     required double height,
@@ -23,7 +24,7 @@ Widget customButton(context, widget,
       child: Text(
         text,
         style: TextStyle(
-            fontSize: 14,
+            fontSize: fontSize,
             color: textColor,
             fontWeight: FontWeight.w600,
             fontFamily: kPrimaryFont,
